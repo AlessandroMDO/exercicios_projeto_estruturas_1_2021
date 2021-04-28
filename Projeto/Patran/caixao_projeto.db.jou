@@ -1,10 +1,10 @@
 $# Creating journal file G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE 
 $# ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e 
-$# Avaliações\Projeto\Patran\caixao.db.jou at 28-Apr-21 13:22:29
+$# Avaliações\Projeto\Patran\caixao_projeto.db.jou at 28-Apr-21 20:36:00
 uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
 "/template.db","G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMENTO" // @
 "S ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto\P" // @
-"atran\caixao.db")
+"atran\caixao_projeto.db")
 $# Synchronizing the User Data Manager
 set_current_dir( "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMEN" // @
 "TOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto" // @
@@ -15,23 +15,28 @@ $#
 $#                                   
 db_set_pref( 303, 3, 0, FALSE, 0.40000001, "" )
 STRING asm_create_patch_xy_created_ids[VIRTUAL]
-asm_const_patch_xyz( "1", "<200 0 150>", "[0 0 0]", "Coord 0",  @
+asm_const_patch_xyz( "1", "<209.60 0 157.20>", "[0 0 0]", "Coord 0",  @
 asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 1
-asm_const_patch_xyz( "2", "<200 0 150>", "[200 0 0]", "Coord 0",  @
+asm_const_patch_xyz( "2", "<209.60 0 157.20>", "[209.60 0 0]", "Coord 0",  @
 asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 2
-asm_const_patch_xyz( "3", "<200 0 150>", "[400 0 0]", "Coord 0",  @
+asm_const_patch_xyz( "3", "<209.60 0 157.20>", "419.20 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# Error reported from application APP
+$#     Unable to process list: "419.20 0 0]"
+$? NO 16000101 
+asm_const_patch_xyz( "3", "<209.60 0 157.20>", "[419.20 0 0]", "Coord 0",  @
 asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 3
-asm_const_patch_xyz( "4", "<200 0 120>", "[0 -300 15]", "Coord 0",  @
-asm_create_patch_xy_created_ids )
+asm_const_patch_xyz( "4", "<209.60 0 125.76>", "[0 -314.40 15.72]", "Coord 0", @
+ asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 4
-asm_const_patch_xyz( "5", "<200 0 120>", "[200 -300 15]", "Coord 0",  @
-asm_create_patch_xy_created_ids )
+asm_const_patch_xyz( "5", "<209.60 0 125.76>", "[209.60 -314.40 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 5
-asm_const_patch_xyz( "6", "<200 0 120>", "[400 -300 15]", "Coord 0",  @
-asm_create_patch_xy_created_ids )
+asm_const_patch_xyz( "6", "<209.60 0 125.76>", "[419.20 -314.40 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
 $# 1 Patch created: Patch 6
 STRING sgm_surface_2curve_created_ids[VIRTUAL]
 sgm_const_surface_2curve( "7", "Surface 1.1", "Surface 4.1",  @
@@ -58,23 +63,6 @@ $# 1 Surface Created: Surface 13
 sgm_const_surface_2curve( "14", "Surface 3.3", "Surface 6.3",  @
 sgm_surface_2curve_created_ids )
 $# 1 Surface Created: Surface 14
-ga_view_aa_set( 0.000000, 0.000000, 59.999996 )
-ga_view_aa_set( 0.000000, 0.000000, -0.000007 )
-gu_fit_view(  )
-ga_view_center_set( -431.166199, 16.054047 )
-gu_fit_view(  )
-ga_view_center_set( 41.168335, 76.455460 )
-gu_fit_view(  )
-$# UNDO: Create Surface 2Curve for Surface 1.1Surface 1.2 1.3 1.4 1.1 2.2 2....
-$# Acknowledgement requested from application Graphics Manager
-$#     You have turned on visible entity picking. The following picking 
-$# behavior will occur in this mode:
-$#  1)	Preselection highlighting will be disabled until visible entity 
-$# picking is turned off.
-$#  2)	Rectangular/Polygon picking mode will be changed to "Enclose Any 
-$# Portion of Entity" until visible entity picking is turned off.
-$? NO 15000091 
-ui_exec_function( "mesh_seed_display_mgr", "init" )
 mesh_seed_create( "Surface 1.4 1.2 2.2 3.2 4.4 4.2 5.2 6.2", 1, 5, 0., 0., 0. )
 mesh_seed_create( "Surface 7.3 7.1 8.3 9.3 10.3 11.3 12.3 13.3 1.3 1.1 4.3" // @
 " 4.1 2.3 2.1 5.3 5.1 3.3 3.1 6.3 6.1", 1, 10, 0., 0., 0. )
@@ -82,7 +70,7 @@ INTEGER fem_create_mesh_surfa_num_nodes
 INTEGER fem_create_mesh_surfa_num_elems
 STRING fem_create_mesh_s_nodes_created[VIRTUAL]
 STRING fem_create_mesh_s_elems_created[VIRTUAL]
-fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["48.024"],  @
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["50.3291"],  @
 "Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
 fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
 fem_create_mesh_s_elems_created )
@@ -111,16 +99,3 @@ $# Realigning database with new node numbers...
 $# Database realignment completed.
 $# Geometric equivalencing completed. 252 nodes deleted.
 uil_primary_file.db_save(  )
-uil_primary_file.db_save(  )
-uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\20211\Patran/templ" // @
-"ate.db", "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMENTOS EST" // @
-"RUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto\Patran" // @
-"\caixao_projeto.db" )
-$# Question from application FILE
-$#     A database is already open.
-$# Do you want to create a new database G:\Meu Drive\USP\SEMESTRES\7º 
-$# SEMESTRE\PROJETO DE ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, 
-$# Trabalhos e Avaliações\Projeto\Patran\caixao_projeto.db anyway ?
-$? YES 36000037 
-$# Flushing the User Data Manager
-$# Journal file stopped recording at 28-Apr-21 20:35:57

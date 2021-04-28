@@ -31,7 +31,7 @@ t2_2 = 1 * delta # [mm]
 # Material 1 - Al 7475-T6 
 # Usado para os perfis
 
-E_1 = 7.2 * 10^(10) #[N/m]
+E_1 = 7.2 * 10**(10) #[N/m]
 nu_1 = 0.32
 
 
@@ -42,7 +42,7 @@ revestimento = 1.5 * delta # [mm]
 alma_longarina = 1.5 * delta # [mm]
 alma_nervura = 1.5 * delta # [mm]
 
-E_2 = 6.9 * 10^(10) #[N/m]
+E_2 = 6.9 * 10**(10) #[N/m]
 nu_2 = 0.33 
 
 
