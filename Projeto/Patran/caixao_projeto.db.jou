@@ -1,0 +1,106 @@
+$# Creating journal file G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE 
+$# ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e 
+$# Avaliações\Projeto\Patran\caixao_projeto.db.jou at 31-May-21 11:38:57
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMENTO" // @
+"S ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto\P" // @
+"atran\caixao_projeto.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMEN" // @
+"TOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto" // @
+"\Patran" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 0.40000001, "" )
+STRING asm_create_patch_xy_created_ids[VIRTUAL]
+asm_const_patch_xyz( "1", "<209.6 0 157.2>", "[0 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 1
+asm_const_patch_xyz( "2", "<209.6 0 157.2>", "[209.6 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 2
+asm_const_patch_xyz( "3", "<209.6 0 157.2>", "[419.2 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 3
+asm_const_patch_xyz( "4", "<209.6 0 125.76>", "[0 -314.4 15.72]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 4
+asm_const_patch_xyz( "5", "<209.6 0 125.76>", "[209.6 -314.4 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 5
+asm_const_patch_xyz( "6", "<209.6 0 125.76>", "[419.2 -314.4 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 6
+uil_primary_file.db_save(  )
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "7", "1.1", "4.1", sgm_surface_2curve_created_ids )
+$# Error reported from application APP
+$#     Unable to process list: "1.1"
+$? NO 16000101 
+sgm_const_surface_2curve( "7", "Surface 1.1", "Surface 4.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 7
+sgm_const_surface_2curve( "8", "Surface 1.4", "Surface 4.4",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 8
+sgm_const_surface_2curve( "9", "Surface 1.3", "Surface 4.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 9
+sgm_const_surface_2curve( "10", "Surface 2.1", "Surface 5.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 10
+sgm_const_surface_2curve( "11", "Surface 2.3", "Surface 5.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 11
+sgm_const_surface_2curve( "12", "Surface 3.1", "Surface 6.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 12
+sgm_const_surface_2curve( "13", "Surface 3.2", "Surface 6.2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 13
+sgm_const_surface_2curve( "14", "Surface 3.3", "Surface 6.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 14
+uil_primary_file.db_save(  )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.4 1.2 2.2 3.2 4.4 4.2 5.2 6.2", 1, 5, 0., 0., 0. )
+mesh_seed_create( "Surface 7.3 7.1 8.3 9.3 10.3 11.3 12.3 13.3 1.3 1.1 4.3" // @
+" 4.1 2.3 2.1 5.35.1 3.3 3.1 6.3 6.1", 1, 10, 0., 0., 0. )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["50.3291"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 66 nodes and 50 elements created for Surface 1.
+$# 66 nodes and 50 elements created for Surface 2.
+$# 66 nodes and 50 elements created for Surface 3.
+$# 66 nodes and 50 elements created for Surface 4.
+$# 66 nodes and 50 elements created for Surface 5.
+$# 66 nodes and 50 elements created for Surface 6.
+$# 121 nodes and 100 elements created for Surface 7.
+$# 66 nodes and 50 elements created for Surface 8.
+$# 121 nodes and 100 elements created for Surface 9.
+$# 121 nodes and 100 elements created for Surface 10.
+$# 121 nodes and 100 elements created for Surface 11.
+$# 121 nodes and 100 elements created for Surface 12.
+$# 66 nodes and 50 elements created for Surface 13.
+$# 121 nodes and 100 elements created for Surface 14.
+$# === 1254 nodes created.  IDs  = 1:1254.
+$# === 1000 elements created.  IDs  = 1:1000.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 252 nodes deleted.
+uil_primary_file.db_save(  )
+ga_view_aa_set( 23., -34., 0. )
+ga_view_aa_set( 23., 56., 0. )
+ga_view_aa_set( -67., 0., -34. )
