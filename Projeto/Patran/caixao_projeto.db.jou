@@ -104,3 +104,86 @@ uil_primary_file.db_save(  )
 ga_view_aa_set( 23., -34., 0. )
 ga_view_aa_set( 23., 56., 0. )
 ga_view_aa_set( -67., 0., -34. )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 31-May-21 11:53:20
+$# Appending to existing journal file G:\Meu Drive\USP\SEMESTRES\7º 
+$# SEMESTRE\PROJETO DE ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, 
+$# Trabalhos e Avaliações\Projeto\Patran\caixao_projeto.db.jou at 04-Jun-21 
+$# 13:21:00
+$# Synchronizing the User Data Manager
+set_current_dir( "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMEN" // @
+"TOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto" // @
+"\Patran" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "engaste", "Displacement", "Nodal", "", "Static", [ @
+"Point 1:7:3 8"], "Geometry", "Coord 0", "1.", ["<0 0 0>", "<0 0 0>",  @
+"<     >", "<     >"], ["", "", "", ""] )
+$# Load/BC set "engaste" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+$# Critical Decision requested from application Regions
+$#     The Select Members databox contains some data.  Do you wish to add it 
+$# to the Application Region List before continuing?
+$? YES 67001017 
+loadsbcs_create2( "F1", "Force", "Nodal", "", "Static", ["Point 9 12"],  @
+"Geometry", "Coord 0", "1.", ["<0 0 100215>", "<     >", "<     >", "<     >"] @
+, ["", "", "", ""] )
+$# Load/BC set "F1" created.
+loadsbcs_create2( "F2", "Force", "Nodal", "", "Static", ["Point 15 16"],  @
+"Geometry", "Coord 0", "1.", ["<0 0 33405>", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Load/BC set "F2" created.
+loadsbcs_create2( "F3", "Force", "Nodal", "", "Static", ["Point 9 15"],  @
+"Geometry", "Coord 0", "1.", ["<0 -13362 0>", "<     >", "<     >", "<     >"] @
+, ["", "", "", ""] )
+$# Load/BC set "F3" created.
+ga_view_center_set( 46.344894, -6.171555 )
+ga_view_zoom_set( 184.448013 )
+ga_view_center_set( 0.349472, -0.465782 )
+ga_view_zoom_set( 207.504013 )
+ga_view_center_set( -51.264542, 5.691246 )
+ga_view_zoom_set( 233.442017 )
+ga_view_center_set( -109.330399, 12.617851 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -78.528946, -11.404259 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -51.149857, -33.281303 )
+ga_view_zoom_set( 207.503998 )
+loadsbcs_create2( "F4", "Force", "Nodal", "", "Static", ["Point 12 16"],  @
+"Geometry", "Coord 0", "1.", ["<0 20043 0>", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Load/BC set "F4" created.
+uil_primary_file.db_save(  )
+uil_toolbar.wireframe(  )
+uil_toolbar.shaded_smooth(  )
+ga_view_center_set( -114.553726, -34.984314 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -185.883255, -36.900238 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -265.963135, -39.552994 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -185.883240, -36.900291 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -114.700928, -34.542301 )
+ga_view_zoom_set( 233.442001 )
+uil_toolbar.hidden_line(  )
+ga_view_aa_set( 23., 56., 0. )
+ga_view_aa_set( 23., -34., 0. )
+ga_view_aa_set( -67., 0., -34. )
+uil_primary_file.db_save(  )
