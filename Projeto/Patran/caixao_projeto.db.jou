@@ -326,3 +326,176 @@ material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al2024", 0,  @
 1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
 "Poisson Ratio"], [2, 5, 0], "Property Values", ["69000", "0.33", ""] )
 uil_primary_file.db_save(  )
+beam_section_display( "HAT", "Sec1", ["15.72", "1.048", "15.72", "5.24"], "",  @
+"", 0. )
+beam_section_create( "Sec1", "HAT", ["15.72", "1.048", "15.72", "5.24"] )
+$# Beam Section "Sec1" created.
+beam_section_display( "T", "Sec2", ["15.72", "10.48", "1.048", "1.048"], "",  @
+"", 0. )
+beam_section_create( "Sec2", "T", ["15.72", "10.48", "1.048", "1.048"] )
+$# Beam Section "Sec2" created.
+$# UNDO: Beam Section Create
+uil_primary_file.db_save(  )
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? NO 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "[Inertia 1,
+$# 1]" differ from the Beam evaluator.  Your value will be used for analysis, 
+$# but the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? NO 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "[Inertia 2,
+$# 2]" differ from the Beam evaluator.  Your value will be used for analysis, 
+$# but the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? NO 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "[Inertia 2,
+$# 1]" differ from the Beam evaluator.  Your value will be used for analysis, 
+$# but the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? NO 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "[Torsional 
+$# Constant]" differ from the Beam evaluator.  Your value will be used for 
+$# analysis, but the beam section will display unchanged.  Do you want to 
+$# ignore this difference ?
+$? NOFORALL 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+$# Warning reported from application ELEM_PROPS
+$#     The selected entities do not have assigned property sets.
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? NOFORALL 29002079 
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle is off. The values for "Area" 
+$# differ from the Beam evaluator.  Your value will be used for analysis, but 
+$# the beam section will display unchanged.  Do you want to ignore this 
+$# difference ?
+$? YESFORALL 29002079 
+$# Acknowledgement requested from application ELEM_PROPS
+$#     Property "Area" is required.  Please enter data for it.
+$? NO 20039 
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 12-Jun-21 16:35:43
+$# Appending to existing journal file G:\Meu Drive\USP\SEMESTRES\7º 
+$# SEMESTRE\PROJETO DE ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, 
+$# Trabalhos e Avaliações\Projeto\Patran\caixao_projeto.db.jou at 12-Jun-21 
+$# 16:36:16
+$# Synchronizing the User Data Manager
+set_current_dir( "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMEN" // @
+"TOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto" // @
+"\Patran" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+$# Critical Decision requested from application ELEM_PROPS
+$#     The "Associate Beam Section" toggle was off. Turning the toggle on 
+$# will recompute and overwrite the current databox properties.
+$#  Do you want to continue and turn the "Associate Beam Section" toggle on ?
+$? YES 29002076 
+elementprops_create( "Nervuras Superiores", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1", "m:Al7475",  @
+"<0 0 -1>", "<0 0 -9.0610>", "<0 0 -9.0610>", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"Analysis", "Analysis", "Analysis"], "Surface 9:11:2.3" )
+$# Property Set "Nervuras_Superiores" created.
+elementprops_create( "Nervuras Inferiores", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1", "m:Al7475",  @
+"<0 0 1>", "<0 0 9.0610>", "<0 0 9.0610>", "", "", "", "", "", "", "", "", "", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"Analysis", "Analysis", "Analysis"], "Surface 7:10:3.3" )
+$# Property Set "Nervuras_Inferiores" created.
+elementprops_create( "Stringers Superiores", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2", "m:Al7475",  @
+"<0 0 1>", "<0 0 -8.777>", "<0 0 -8.777>", "", "", "", "", "", "", "", "", "", @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"Analysis", "Analysis", "Analysis"], "Surface 8:13:5.3" )
+$# Property Set "Stringers_Superiores" created.
+elementprops_create( "Stringers Inferiores", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2", "m:Al7475",  @
+"<0 0 -1>", "<0 0 8.777>", "<0 0 8.777>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Analysis" @
+, "Analysis", "Analysis"], "Surface 7.1 12.3" )
+$# Property Set "Stringers_Inferiores" created.
+elementprops_create( "Revest", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111,  @
+4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5,  @
+9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "", "1.572", "", @
+ "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 1:14" )
+$# Property Set "Revest" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
