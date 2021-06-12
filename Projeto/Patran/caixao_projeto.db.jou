@@ -187,3 +187,65 @@ ga_view_aa_set( 23., 56., 0. )
 ga_view_aa_set( 23., -34., 0. )
 ga_view_aa_set( -67., 0., -34. )
 uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 04-Jun-21 13:45:14
+$# Appending to existing journal file G:\Meu Drive\USP\SEMESTRES\7º 
+$# SEMESTRE\PROJETO DE ELEMENTOS ESTRUTURAIS DE AERONAVES I\Exercicios, 
+$# Trabalhos e Avaliações\Projeto\Patran\caixao_projeto.db.jou at 12-Jun-21 
+$# 15:24:19
+$# Synchronizing the User Data Manager
+set_current_dir( "G:\Meu Drive\USP\SEMESTRES\7º SEMESTRE\PROJETO DE ELEMEN" // @
+"TOS ESTRUTURAIS DE AERONAVES I\Exercicios, Trabalhos e Avaliações\Projeto" // @
+"\Patran" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_modify2( "F1", "F1", "Force", "Nodal", "", "Static", ["Point 9 12"],  @
+"Geometry", "Coord 0", "1.", ["<0., 0., 95625.>", "", "", ""], ["", "", "", "" @
+] )
+$# Load/BC set "F1" modified.
+loadsbcs_modify2( "F2", "F2", "Force", "Nodal", "", "Static", ["Point 15 16"], @
+ "Geometry", "Coord 0", "1.", ["<0., 0., 31875.>", "", "", ""], ["", "", "",  @
+""] )
+$# Load/BC set "F2" modified.
+loadsbcs_modify2( "F3", "F3", "Force", "Nodal", "", "Static", ["Point 9 15"],  @
+"Geometry", "Coord 0", "1.", ["<0., -12750., 0.>", "", "", ""], ["", "", "",  @
+""] )
+$# Load/BC set "F3" modified.
+loadsbcs_modify2( "F4", "F4", "Force", "Nodal", "", "Static", ["Point 12 16"], @
+ "Geometry", "Coord 0", "1.", ["<0., 19125., 0.>", "", "", ""], ["", "", "",  @
+""] )
+$# Load/BC set "F4" modified.
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
+uil_primary_file.db_save(  )
