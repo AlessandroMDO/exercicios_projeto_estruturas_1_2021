@@ -249,3 +249,80 @@ uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
 uil_primary_file.db_save(  )
+ga_view_center_set( -99.111923, -35.983318 )
+ga_view_zoom_set( 207.503998 )
+ga_view_center_set( -114.569901, -32.184315 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -131.370682, -25.994564 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -149.442490, -17.373127 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -241.770370, -16.440517 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -146.644577, -13.829220 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -62.088120, -11.508053 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -107.847946, -28.087742 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -159.327866, -46.739910 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -217.242722, -67.723587 )
+ga_view_zoom_set( 373.928955 )
+ga_view_center_set( -132.048874, -45.690750 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -88.775864, -27.598167 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -74.517227, -3.557640 )
+ga_view_zoom_set( 262.622253 )
+print( "printer=Print to File(PDF), driver=Postscript, destination=Unknown" // @
+", window=Current Viewport, output_file= , paper=Letter, left_margin=1.000" // @
+"000 in, right_margin=1.000000 in, top_margin=1.000000 in, bottom_margin=1" // @
+".000000 in, default_units=Inches, orientation=Portrait, copies=1, format=" // @
+"Color, background=White, lines_&_text=Black, line_weight=0.250000 pts, te" // @
+"xt_scale=100%, image_size=Fit on Page, scale_factor=1.000000, center=Yes," // @
+" draw_borders=Yes, quality=Normal, color_model=RGB, gcr=75 %" )
+uil_toolbar.labels_on(  )
+uil_toolbar.labels_off(  )
+gu_fit_view(  )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_display_mgr.erase(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+mesh_seed_display_mgr.erase(  )
+mesh_seed_display_mgr.erase(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7475", 0,  @
+"Date: 12-Jun-21           Time: 15:47:00", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["72000", "0.32", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al2024", 0,  @
+"Date: 12-Jun-21           Time: 15:47:00", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["69000", "0.33", ""] )
+uil_primary_file.db_save(  )
